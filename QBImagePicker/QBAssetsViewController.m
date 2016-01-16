@@ -497,7 +497,6 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
         // Number of assets
         UILabel *label = (UILabel *)[footerView viewWithTag:1];
         
-        NSBundle *bundle = self.imagePickerController.assetBundle;
         NSUInteger numberOfPhotos = [self.fetchResult countOfAssetsWithMediaType:PHAssetMediaTypeImage];
         NSUInteger numberOfVideos = [self.fetchResult countOfAssetsWithMediaType:PHAssetMediaTypeVideo];
         
