@@ -506,14 +506,14 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
                 NSString *format;
                 if (numberOfPhotos == 1) {
                     if (numberOfVideos == 1) {
-                        format = @"%ld Foto, %ld Video";
+                        format = @"%ld Photo, %ld Video";
                     } else {
-                        format = @"%ld Foto, %ld Videos";
+                        format = @"%ld Photo, %ld Videos";
                     }
                 } else if (numberOfVideos == 1) {
                     format = @"%ld Photos, %ld Video";
                 } else {
-                    format = @"%ld Fotos, %ld Videos";
+                    format = @"%ld Photos, %ld Videos";
                 }
                 
                 label.text = [NSString stringWithFormat:format, numberOfPhotos, numberOfVideos];
@@ -522,7 +522,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
                 
             case QBImagePickerMediaTypeImage:
             {
-                NSString *format = (numberOfPhotos == 1) ? @"%ld Foto": @"%ld Fotos";
+                NSString *format = (numberOfPhotos == 1) ? @"%ld Photo": @"%ld Photos";
                 
                 label.text = [NSString stringWithFormat:format, numberOfPhotos];
             }
