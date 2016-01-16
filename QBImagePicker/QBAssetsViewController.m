@@ -209,9 +209,9 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
     if (selectedAssets.count > 0) {
         NSString *format;
         if (selectedAssets.count > 1) {
-            format = @"%ld items seleccionados";
+            format = @"%ld items selected";
         } else {
-            format = @"%ld items seleccionados";
+            format = @"%ld item selected";
         }
         
         NSString *title = [NSString stringWithFormat:format, selectedAssets.count];
